@@ -1,0 +1,120 @@
+/**
+ * 
+ * Styles for the customizer range slider control
+ *
+ */
+.range-slider {
+  width: 100%;
+}
+.range-slider-range {
+  height: 10px;
+  -webkit-appearance: none;
+  width: calc(100% - (73px));
+  border-radius: 5px;
+  background: #d7dcdf;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+/* Firefox range track styles */
+.range-slider-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  -webkit-transition: background .15s ease-in-out;
+  transition: background .15s ease-in-out;
+}
+.range-slider-range::-moz-range-thumb:hover {
+  background: #1abc9c;
+}
+.range-slider-range:active::-moz-range-thumb {
+  background: #1abc9c;
+}
+.range-slider-range::-moz-range-track {
+  background: #d7dcdf;
+  border: 0;
+}
+/* Webkit based browsers (Chrome, Safari, Opera) range track styles */
+.range-slider-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  -webkit-transition: background .15s ease-in-out;
+  transition: background .15s ease-in-out;
+}
+.range-slider-range::-webkit-slider-runnable-track {
+    height: 10px;
+}
+.range-slider-range::-webkit-slider-thumb:hover {
+  background: #1abc9c;
+}
+.range-slider-range:active::-webkit-slider-thumb {
+  background: #1abc9c;
+}
+/* Internet Explorer 10 + */
+@supports (-ms-ime-align:auto) {
+  .range-slider-range { 
+    height: auto;
+    float: left;
+  } 
+}
+.range-slider-range::-ms-track {
+    height: 10px;
+    background: transparent;
+    border-color: transparent;
+    border-width: 6px 0;
+    color: transparent;
+}
+.range-slider-range::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+.range-slider-range::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+.range-slider-range::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #2c3e50;
+}
+.range-slider-range:focus::-ms-fill-lower {
+    background: #888;
+}
+.range-slider-range:focus::-ms-fill-upper {
+    background: #ccc;
+}
+/* End browser range styles */
+.range-slider-value {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #2c3e50;
+  padding: 5px 10px;
+  margin-left: 8px;
+}
+.range-slider-value:after {
+  position: absolute;
+  top: 8px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #2c3e50;
+  border-bottom: 7px solid transparent;
+  content: '';
+}
+

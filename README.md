@@ -16,7 +16,7 @@ This WordPress plugin creates a new control type for the [WordPress Theme Custom
 			array(
 				'default'           => 3,
 				'sanitize_callback' => 'absint',
-				'transport'			=> 'postMessage'
+				'transport'	        => 'postMessage'
 			)
 		);
 

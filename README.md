@@ -48,7 +48,9 @@ This WordPress plugin creates a new control type for the [WordPress Theme Custom
 	* **input_attrs** - these are used to define the attributes of the input.
 	* **min** - the minimum number allowed.
 	* **max** - the maximum number allowed.
-	* **step** - the amount to increase between each chosen number. For example, if your minimum was 3 and maximum was 9, with a step of 3, the allowed numbers in the slider would be 3, 6, and 9. Decimal steps are allowed, such as using a .5 step. Make sure your minimum and maximum numbers can be divided evenly by your step or your numbers will not be correct.
+	* **step** - the amount to increase between each chosen number. 
+	   * Example: if your minimum was 3 and maximum was 9, with a step of 3, the allowed numbers in the slider would be 3, 6, and 9. 
+       * Make sure your minimum and maximum numbers can be divided evenly by your step or your numbers will not be correct.
 
 	Learn more about range sliders at [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
 

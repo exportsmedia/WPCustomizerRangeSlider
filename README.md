@@ -14,9 +14,9 @@ This WordPress plugin creates a new control type for the [WordPress Theme Custom
 		$wp_customize->add_setting(
 			'range_slider_test',
 			array(
-				'default'            => 3,
-				'sanitize_callback'  => 'absint',
-				'transport'			 => 'postMessage'
+				'default'           => 3,
+				'sanitize_callback' => 'absint',
+				'transport'			=> 'postMessage'
 			)
 		);
 
@@ -25,15 +25,15 @@ This WordPress plugin creates a new control type for the [WordPress Theme Custom
 			$wp_customize, 
 			'range_slider_test', 
 			array(
-				'label'      => 'Range Slider Test.',
-				'description'=> "Choose a number.",
-				'type'     	 => 'range_slider',
-				'section'    => 'range_slider_test',
-				'settings'   => 'range_slider_test',
-				'input_attrs' => array(
-				    'min' => 3,
-				    'max' => 24,
-				    'step' => 3,
+				'label'      	=> 'Range Slider Test.',
+				'description'	=> "Choose a number.",
+				'type'       	=> 'range_slider',
+				'section'    	=> 'range_slider_test',
+				'settings'   	=> 'range_slider_test',
+				'input_attrs' 	=> array(
+				    'min' 	=> 3,
+				    'max' 	=> 24,
+				    'step' 	=> 3,
 				  ),
 			) ) 
 		);

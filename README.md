@@ -56,7 +56,7 @@ This WordPress plugin creates a new control type for the [WordPress Theme Custom
 
 ## Results
 
-![screenshot](https://exportsmedia-media.s3-us-west-2.amazonaws.com/range-slider-example.gif)
+<img src="https://exportsmedia-media.s3-us-west-2.amazonaws.com/range-slider-example.gif" height="300" width="500" alt="screenshot">
 
 ## Version
 

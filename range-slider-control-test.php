@@ -15,20 +15,20 @@ function customizer_controls_test() {
 		array(
 			'title'     	=> 'Range Slider Test',
 			'priority'  	=> 10,
-			'description'	=> "",
+			'description'	=> "A test area for the range slider.",
 		)
 	);
 
 	/**
-	Range Slider Example
-	**/
+	 * Range Slider Example
+	 */
 	if( class_exists('Range_Slider_Custom_Control') ) {
 		$wp_customize->add_setting(
 			'range_slider_test',
 			array(
 				'default'            => 3,
-				'sanitize_callback'  => 'customizer_number_range_sanitize',
-				'transport'			 => 'postMessage'
+				'sanitize_callback'  => 'intval',
+				'transport'			 => 'refresh'
 			)
 		);
 
